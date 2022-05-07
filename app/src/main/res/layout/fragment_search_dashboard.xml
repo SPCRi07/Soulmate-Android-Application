@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/draw"
+            android:text="Search"
+            android:textColor="#FFF"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textIsSelectable="false"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/minage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Min Age *">
+            </TextView>
+
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minage"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnerminage">
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/maxage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="21dp"
+                android:text="Max Age *">
+
+            </TextView>
+
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maxage"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnermaxage">
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/minheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerminage"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Min Height *">
+
+            </TextView>
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minheight"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnerminheight">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/maxheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnermaxage"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="21dp"
+                android:text="Max Height *">
+
+            </TextView>
+
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maxheight"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnermaxheight">
+            </Spinner>
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/stste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerminheight"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Stste *">
+
+            </TextView>
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stste"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnerstate">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnermaxheight"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="21dp"
+                android:text="Ciry *">
+
+            </TextView>
+
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnercity">
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerstate"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Religion *"></TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/religion"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnerriligion">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/caste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerriligion"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Caste *">
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/caste"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnercaste">
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/mothertongue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnercaste"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Mother Tongue *">
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mothertongue"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnermothertongue">
+            </Spinner>
+
+
+
+
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnermothertongue"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Education *">
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/education"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnereducation">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnereducation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Occupation *">
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/occupation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinneroccupation">
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/minincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinneroccupation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Min Income *">
+
+            </TextView>
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minincome"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnerminincome">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/maxincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinneroccupation"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="30dp"
+                android:text="Max Income *">
+
+            </TextView>
+
+
+            <Spinner
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maxincome"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnermaxincome">
+            </Spinner>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnermaxincome"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Search">
+
+            </Button>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
+

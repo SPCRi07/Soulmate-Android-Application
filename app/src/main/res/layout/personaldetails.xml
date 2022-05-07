@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/draw"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/draw"
+            android:text="Personal Details"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFF"
+            android:textIsSelectable="false"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rbg"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:drawableLeft="@drawable/gender"
+        android:drawablePadding="10dp"
+        android:textStyle="italic"
+        android:textColor="#302E2E"
+        android:textSize="22dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp">
+    </TextView>
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="Male"
+        tools:ignore="OnClick" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="15dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="Female"
+        android:textSize="12dp"
+        tools:ignore="OnClick" />
+</RadioGroup>
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/birth"
+        android:drawablePadding="15dp"
+        android:layout_below="@+id/rbg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Date of birth"
+        android:textStyle="italic"
+        android:textColor="#302E2E"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textColorHint="#3C3A3A"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="10dp"
+        android:hint="select date"
+        android:textSize="14dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txtcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerstate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="City *"
+        android:textStyle="italic"
+        android:textColor="#302E2E"
+        android:textSize="22dp"
+        >
+
+    </TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcity"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinnercity">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/txtstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcountry"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic"
+        android:textColor="#302E2E"
+        android:textSize="22dp"
+        android:text="State"
+        >
+
+    </TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/txtstate"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinnerstate">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/txtcountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:text="India"
+        android:textColor="#302E2E"
+        android:textSize="22dp"
+        android:textStyle="italic"
+
+        ></TextView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnnextpersonaldetails"
+        android:text="Next"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

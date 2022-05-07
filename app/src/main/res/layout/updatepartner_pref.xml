@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update_partner_pref"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:id="@+id/vernum"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Partner Prefrence"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFF"
+            android:textIsSelectable="false"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="italic"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/partnerskip"
+            />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imglookingfor"
+                android:layout_marginTop="85dp"
+                android:drawableLeft="@drawable/partnerpref"
+                android:layout_marginLeft="20dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lookingfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="90dp"
+                android:layout_toRightOf="@+id/imglookingfor"
+                android:textSize="25dp"
+                android:paddingLeft="20dp"
+                android:textStyle="italic|bold"
+                android:textColor="#302E2E"
+                android:text="Looking For">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_below="@+id/lookingfor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:layout_marginRight="15dp"
+                android:text="The criteria below influences your matches and interest *"
+                android:textColor="#302E2E" />
+
+
+            <TextView
+                android:id="@+id/minage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:textSize="18dp"
+                android:textColor="#302E2E"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Min Age *">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/updateminage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minage"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="23dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Min Age"
+                android:onClick="showDialogListView"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/maxage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="19dp"
+                android:text="Max Age *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/updatemaxage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minage"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/updateminage"
+                android:focusableInTouchMode="false"
+                android:hint="Select Max Age"
+                android:onClick="showDialogListView2"
+                android:paddingRight="25dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/minheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatemaxage"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Min Height *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/updateminheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minheight"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Min Height"
+                android:onClick="showDialogListView3"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/maxheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatemaxage"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:textColor="#302E2E"
+                android:text="Max Height *">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/updatemaxhieght"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maxheight"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/updateminheight"
+                android:focusableInTouchMode="false"
+                android:hint="Select Max Height"
+                android:onClick="showDialogListView4"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/manglik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateminheight"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="Manglik *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/updatemanglik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manglik"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Manglik"
+                android:onClick="showDialogListView5"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/maritialstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatemanglik"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="Maritial Status *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/updatemaritialstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maritialstatus"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Maritial Status"
+                android:onClick="showDialogListView6"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatemaritialstatus"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="Religion *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/updatereligion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/religion"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Religion"
+                android:onClick="showDialogListView7"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatereligion"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="cast *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/updatecast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cast"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select cast"
+                android:onClick="showDialogListView8"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/mothertongue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatecast"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="Mother Tongue *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/updatemothertongue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mothertongue"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Mother Tongue"
+                android:onClick="showDialogListView9"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatemothertongue"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="Education *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/updateeducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/education"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Education"
+                android:onClick="showDialogListView10"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateeducation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="Occupation *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/updateoccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/occupation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Occupation"
+                android:onClick="showDialogListView11"
+                android:text="" />
+
+
+
+            <TextView
+                android:id="@+id/minincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateoccupation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Min Income *"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/updateminincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minincome"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select Min Income"
+                android:onClick="showDialogListView12"
+                android:layout_marginBottom="30sp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/maxincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateoccupation"
+                android:layout_marginLeft="283dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:textColor="#302E2E"
+                android:text="Max Income *">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/updatemaxincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maxincome"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/updateminincome"
+                android:focusableInTouchMode="false"
+                android:hint=" Max Income"
+                android:onClick="showDialogListView13"
+                android:layout_marginBottom="90sp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/updatepartner_pref_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="140dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Update">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

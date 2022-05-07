@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    tools:context=".appearance">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        >
+
+
+
+        <TextView
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="About Appearance "
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFF"
+            android:textIsSelectable="false"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgappearance"
+                android:layout_marginTop="85dp"
+                android:drawableLeft="@drawable/appearanc1"
+                android:layout_marginLeft="20dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtappearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="90dp"
+                android:layout_toRightOf="@+id/imgappearance"
+                android:textSize="25dp"
+                android:paddingLeft="20dp"
+                android:textStyle="italic|bold"
+                android:textColor="#302E2E"
+                android:text="Appearance">
+            </TextView>
+
+            <TextView
+                android:id="@+id/Age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtappearance"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Age "
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/selectage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Age"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:hint="Enter age"
+                android:inputType="number"
+                />
+
+
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectage"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="Weight"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/selectweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:hint="Enter weight"
+                />
+
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectweight"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="Height"
+                android:textColor="#302E2E"
+                android:textSize="18dp">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/selectheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+               />
+
+
+
+            <Button
+                android:id="@+id/btnnextaboutappearance"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Next"/>
+
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/relsd5">
+
+        <TextView
+            android:id="@+id/draw5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/draw5"
+            android:text="You Liked By"
+            android:textColor="#FFF"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:fontFamily="@font/adamina"
+            android:textStyle="bold|italic"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/likesnone"
+        android:text="Wait Gives Best"
+        android:textColor="#000"
+        android:drawableTop="@drawable/ic_likesnone"
+        android:fontFamily="@font/almendra"
+        android:gravity="center_horizontal|center"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listviewlikes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        style="@style/TwoWayView"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/relsd5"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likesprogress"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

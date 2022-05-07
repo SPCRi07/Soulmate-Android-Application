@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#EBEBEB">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        >
+
+    <TextView
+        android:id="@+id/vernum"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Verify Number"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFF"
+        android:textIsSelectable="false"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnok"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="OK"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vericon"
+            android:drawableTop="@drawable/verify"
+android:layout_marginTop="150dp"
+            />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/desc"
+    android:textAlignment="center"
+    android:layout_below="@id/vericon"
+    android:text="Phone Verification successfull"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    android:layout_marginTop="15dp"
+    />
+
+        <TextView
+            android:id="@+id/phonedesc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginRight="50dp"
+            android:text=" has bees verified by SoulMate"
+            android:textAlignment="center"
+            android:textSize="15dp"
+
+            />
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

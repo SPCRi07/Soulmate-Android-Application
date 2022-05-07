@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/vernum"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:text="Verify PIN"
+            android:textColor="#FFF"
+            android:textIsSelectable="false"
+            android:textSize="22dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/draw"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/txt12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="Verification code send to "
+            android:textColor="#252525"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/txt122"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:text=""
+            android:textColor="#252525"
+            android:textSize="15dp"
+            android:layout_below="@id/txt12"/>
+
+        <TextView
+            android:id="@+id/txt232"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt122"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Didn't receive code?"
+            android:textColor="#252525"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt232"
+           />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Enter OTP "
+        android:textColor="#F75151"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ed13"
+        app:layout_constraintStart_toStartOf="@+id/ed13"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/ed13"
+        app:layout_constraintStart_toStartOf="@+id/ed13"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <EditText
+        android:id="@+id/ed11"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ed12"
+        app:layout_constraintEnd_toStartOf="@+id/ed12"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape3"/>
+
+    <EditText
+        android:id="@+id/ed12"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="number"
+        android:background="@drawable/shape3"
+        android:maxLength="1"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ed13"
+        app:layout_constraintEnd_toStartOf="@+id/ed13"
+        app:layout_constraintStart_toEndOf="@+id/ed11"
+        />
+
+    <EditText
+        android:id="@+id/ed13"
+        android:layout_width="0dp"
+        android:maxLines="1"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="number"
+        android:maxLength="1"
+        app:layout_constraintEnd_toStartOf="@+id/ed14"
+        app:layout_constraintStart_toEndOf="@+id/ed12"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        android:background="@drawable/shape3"/>
+
+    <EditText
+        android:id="@+id/ed14"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ed13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ed13"
+        android:background="@drawable/shape3"/>
+
+
+    <Button
+        android:id="@+id/btnverify2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Verify"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

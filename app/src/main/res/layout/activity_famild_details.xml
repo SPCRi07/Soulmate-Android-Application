@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FamildDetails"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/draw"
+            android:text="Family Details"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFF"
+            android:textIsSelectable="false"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgfamily"
+                android:layout_marginTop="90dp"
+                android:drawableLeft="@drawable/family1"
+                android:layout_marginLeft="15dp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="90dp"
+                android:layout_toRightOf="@+id/imgfamily"
+                android:textSize="22dp"
+                android:paddingLeft="20dp"
+                android:textStyle="italic"
+                android:textColor="#302E2E"
+                android:text="About Your Family">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtaboutmedesc"
+                android:layout_below="@+id/family"
+                android:text="Tell us about your family"
+                android:textSize="18dp"
+                android:textColor="#302E2E"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edaboutmedesc"
+                android:layout_below="@id/txtaboutmedesc"
+                android:ems="10"
+                android:textColor="#302E2E"
+                android:textColorHint="#838080"
+                android:hint="About my family.You can change this text later on as well."
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                >
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/txtfathersoccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edaboutmedesc"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Fathers Occupation"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectfathersoccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfathersoccupation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select your Fathers Occupation"
+                android:onClick="showDialogListView1"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/txtmothersoccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectfathersoccupation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Mothers Occupation"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectmothersoccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtmothersoccupation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select your Mothers Occupation"
+                android:onClick="showDialogListView2"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtbrothers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectmothersoccupation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Brother(s)"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectbrothers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtbrothers"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select number of brothers you have"
+                android:text=""
+                android:onClick="showDialogListView3"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/txtofwhichmarried"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectbrothers"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Of which married"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectofwhichmarried"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtofwhichmarried"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select of which is married"
+                android:onClick="showDialogListView4"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/txtsisters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectofwhichmarried"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Sister(s)"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectsisters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsisters"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select number of sisters you have"
+                android:text=""
+                android:onClick="showDialogListView5"
+                />
+
+
+
+            <TextView
+                android:id="@+id/txtsisofwhichmarried"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectsisters"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Of which married"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectsisofwhichmarried"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsisofwhichmarried"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select of which is married"
+                android:text=""
+                android:onClick="showDialogListView6"
+                />
+
+
+            <TextView
+                android:id="@+id/txtfamilyincome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectsisofwhichmarried"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Family Income"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectfamilyincome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfamilyincome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select your family income"
+                android:onClick="showDialogListView7"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtfamilystatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectfamilyincome"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Family Status"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectfamilystatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfamilystatus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select your family status"
+                android:onClick="showDialogListView8"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/txtfamilytype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectfamilystatus"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Family Type"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectfamilytype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfamilytype"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select your family type"
+                android:onClick="showDialogListView9"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/txtfamilyvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectfamilytype"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:text="Family Value"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectfamilyvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfamilyvalue"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select your family value"
+                android:onClick="showDialogListView10"
+                android:text="" />
+
+
+            <EditText
+                android:id="@+id/selectlivingwithfamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectfamilyvalue"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Living With Parents"
+                android:onClick="showDialogListView11"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/txtfamilybasedoutof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+android:layout_below="@+id/selectlivingwithfamily"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Family based out of"
+                android:textColor="#302E2E"
+                android:textSize="17dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/selectfamilybasedoutof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfamilybasedoutof"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="Select country for your family"
+                android:onClick="showDialogListView12"
+                android:text="" />
+
+
+
+            <Button
+                android:id="@+id/btnfamilydetailsnext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectfamilybasedoutof"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Next"
+                android:textSize="20dp"
+                android:textColor="#FFF">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

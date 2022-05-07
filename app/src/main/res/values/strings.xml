@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Soulmate</string>
+    <string name="navigation_drawer_open">start</string>
+    <string name="navigation_drawer_close">end</string>
+    <string name="speechgetstring">Speak Your Gmail Or Username</string>
+    <string name="exp1">Request Can be Send to Any Type Of Member of Soulmate.To do that you have to Click Send Interest in Profilview of that particular Person.</string>
+    <string name="exp2">photoRequest Can be Send to Premium Hidden profiled Member of Soulmate.To do that you have to Click Send photorequest in Profilview(Contact) of that particular Person.For Sending photorequest You must buy Premium to unlock the feature.</string>
+    <string name="exp4">
+    For Your Safety Side we have option to Deactive Account and Erase Information of you Completely.
+        In order to do that you have just only have to click on "Delete Account "in Settings.</string>
+    <string name="exp3">
+        premimum Feautres Can be unlocked by Purchasing from Your App.you can use credit/debit/wallet/NetBanking for purchasing.In Order to do that go to your Navigation Drawer in Leftside and click on "buy membership".further instruction are given there.</string><!-- TODO: Remove or change this placeholder text -->
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editprofile"
+    android:background="@color/colorPrimary">
+
+  <androidx.appcompat.widget.SwitchCompat
+      android:id="@+id/photo_switch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="12dp"
+      android:checked="false"
+      android:text="photoshowing"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:textOff="Photo showing"
+      android:textOn="Photo showing"
+      android:visibility="invisible"/>
+  <androidx.appcompat.widget.SwitchCompat
+      android:id="@+id/premium_switch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="12dp"
+      android:checked="false"
+      android:text="Remove Premium"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_below="@id/photo_switch"
+      android:visibility="invisible"/>
+  <androidx.appcompat.widget.SwitchCompat
+      android:id="@+id/theme_switch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="12dp"
+      android:checked="false"
+      android:text="Dark Mode"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_below="@id/premium_switch"
+      android:visibility="invisible"/>
+  <androidx.appcompat.widget.SwitchCompat
+      android:id="@+id/like_switch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="12dp"
+      android:checked="false"
+      android:text="Like Page"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_below="@id/theme_switch"
+      android:visibility="invisible"/>
+
+
+  <ImageView
+      android:layout_width="400sp"
+      android:layout_height="400sp"
+      android:layout_centerInParent="true"
+      android:src="@drawable/password"
+      android:visibility="invisible"
+      android:id="@+id/photoprivacy"
+      tools:ignore="VectorDrawableCompat" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:Context=".profileview">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:id="@+id/relativeprofile">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:id="@+id/backtohome"
+                    tools:ignore="VectorDrawableCompat"
+                    />
+
+                <ImageView
+                    android:id="@+id/profileviewimage"
+                    android:layout_width="276dp"
+                    android:layout_height="248dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/instagram_like"
+                    android:layout_centerInParent="true"
+                    tools:ignore="VectorDrawableCompat"
+                    android:id="@+id/profilelike"
+                    android:alpha="0"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!-- our tablayout to display tabs  -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutprofile"
+        android:layout_below="@id/relativeprofile"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:minHeight="?attr/actionBarSize"
+        app:tabTextColor="@color/colorgray"
+        app:tabIndicatorColor="#F44336"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabBackground="@color/colorPrimaryDark"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        />
+
+    <!-- View pager to swipe views -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayoutprofile"
+        android:layout_above="@id/relss11"
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pagerprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/relss11">
+
+
+        <ImageView
+            android:id="@+id/addtoshortlist"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star_border_black_24dp"
+            android:layout_marginLeft="80sp"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Shortlist"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="50sp"
+            android:layout_below="@id/addtoshortlist"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/sendinterest"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_request2"
+            android:layout_marginRight="90dp"
+            android:layout_alignParentRight="true"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Interest"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="70sp"
+            android:layout_below="@id/addtoshortlist"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

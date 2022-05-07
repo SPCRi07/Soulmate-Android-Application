@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeApppassowrd"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/keyoldpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:background="@drawable/btnedit"
+        android:hint="Old Password"
+        android:orientation="vertical"
+        android:padding="10sp"
+        android:textColorHint="@color/colorgray"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="323dp"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:layout_above="@id/keynewpassword"
+        />
+
+    <EditText
+        android:id="@+id/keynewpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:background="@drawable/btnedit"
+        android:hint="New  Password"
+        android:orientation="vertical"
+        android:padding="10sp"
+        android:textColorHint="@color/colorgray"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="387dp"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:layout_centerInParent="true"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/keyconfirmnewpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:background="@drawable/btnedit"
+        android:hint="Confirm New Password"
+        android:padding="10sp"
+        android:textColorHint="@color/colorgray"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="451dp"
+        android:inputType="numberPassword"
+        android:layout_below="@id/keynewpassword"
+        android:maxLength="6"
+        android:maxLines="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncurve"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="667dp"
+        android:layout_margin="40sp"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/changeapppassword"
+        android:layout_below="@id/changekeypassword"
+        android:text="Change App Password"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/adamina"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/changekeypassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:gravity="right"
+        android:layout_below="@id/keyconfirmnewpass"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorPrimaryDarktheme"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="533dp"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

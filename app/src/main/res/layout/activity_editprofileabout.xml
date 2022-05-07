@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editprofileabout"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/basicdetailscard"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="#ACC1FF"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:backgroundTint="#FFF"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutname"
+                    android:drawableLeft="@drawable/name"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="#504C4C"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edit"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@drawable/pencil"
+                    >
+                </TextView>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/aboutreligion2"
+                        android:text="religion"
+                        android:layout_below="@+id/edit"
+                        android:textSize="15dp"
+                        android:layout_marginTop="15dp"
+                         android:textColor="#504E4E"
+                        android:layout_marginLeft="14dp"
+                        >
+                    </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutheight"
+
+                    android:text="height"
+                    android:layout_below="@+id/edit"
+                    android:layout_toRightOf="@+id/aboutreligion2"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/aboutincome"
+
+    android:textSize="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_below="@+id/aboutname"
+    android:layout_toRightOf="@+id/aboutheight"
+    android:textColor="#504E4E"
+    android:text="Income"
+    android:layout_marginTop="10dp"
+    >
+</TextView>
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutreligion1"
+
+                    android:text="religion"
+
+                    android:layout_below="@+id/aboutheight"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutcaste"
+
+                    android:text="caste"
+                    android:layout_below="@+id/aboutheight"
+                    android:layout_toRightOf="@+id/aboutreligion1"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/abouttongue"
+
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/aboutincome"
+                    android:layout_toRightOf="@+id/aboutcaste"
+                    android:textColor="#504E4E"
+                    android:text="MotherTongue"
+                    android:layout_marginTop="8dp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutcity"
+                    android:layout_below="@+id/abouttongue"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:text="city"
+                    android:textSize="15dp"
+
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutstate"
+
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/abouttongue"
+                    android:layout_toRightOf="@+id/aboutcity"
+                    android:textColor="#504E4E"
+                    android:text="state"
+                    android:layout_marginTop="8dp"
+                    >
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/educationcard"
+        android:layout_below="@+id/basicdetailscard"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="#ACC1FF"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:backgroundTint="#FFF"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/abouteducation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/education12"
+                    android:drawablePadding="10dp"
+                    android:text="Education"
+                    android:textColor="#504C4C"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/editeducation"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@drawable/pencil"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtheighesteducation"
+
+                    android:text="Heighest Education"
+                    android:layout_below="@+id/editeducation"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutheighesteducation"
+
+                    android:layout_below="@+id/editeducation"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtheighesteducation"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtugdegree"
+
+                    android:text="UG Degree"
+                    android:layout_below="@+id/aboutheighesteducation"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/aboutheighesteducation"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtugdegree"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/careercard"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/educationcard"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="#ACC1FF"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:backgroundTint="#FFF"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/career"
+                    android:text="Career"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="#504C4C"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editcareer"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@drawable/pencil"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtemployedin"
+
+                    android:text="Employed In"
+                    android:layout_below="@+id/editcareer"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutemployeein"
+
+                    android:layout_below="@+id/editcareer"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtemployedin"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtoccupation"
+
+                    android:text="Occupation"
+                    android:layout_below="@+id/aboutemployeein"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutoccupation"
+
+                    android:layout_below="@+id/aboutemployeein"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtoccupation"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/familycard"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/careercard"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="#ACC1FF"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:backgroundTint="#FFF"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/family1"
+                    android:drawablePadding="10dp"
+                    android:text="Family"
+                    android:textColor="#504C4C"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/editfamily"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@drawable/pencil"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtfamilytype"
+
+                    android:text="Family Type"
+                    android:layout_below="@+id/editfamily"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutfamilytype"
+
+                    android:layout_below="@+id/editfamily"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtfamilytype"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtfamilyvalues"
+
+                    android:text="Family Values"
+                    android:layout_below="@+id/aboutfamilytype"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/aboutfamilytype"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtfamilyvalues"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtfathersoccupation"
+
+                    android:text="Fathers Occupation"
+                    android:layout_below="@+id/txtfamilyvalues"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutfathersoccupation"
+
+                    android:layout_below="@+id/txtfamilyvalues"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtfamilytype"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtfamilyincome"
+
+                    android:text="Family Income"
+                    android:layout_below="@+id/aboutfathersoccupation"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/aboutfathersoccupation"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtfamilyincome"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/contactcard"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/familycard"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="#ACC1FF"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:backgroundTint="#FFF"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/contact1"
+                    android:text="Contact Details"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="#504C4C"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/editcontact"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@drawable/pencil"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtemailid"
+
+                    android:text="Email ID"
+                    android:layout_below="@+id/editcontact"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/aboutemailid"
+
+                    android:layout_below="@+id/editcontact"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtemailid"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtcontact"
+
+                    android:text="Contact No."
+                    android:layout_below="@+id/aboutemailid"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/aboutemailid"
+                    android:text="abc"
+                    android:layout_toRightOf="@+id/txtcontact"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="7dp"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/contactcard"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="#ACC1FF"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:backgroundTint="#FFF"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/me"
+                    android:text="About me"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="#504C4C"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/editme"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@drawable/pencil"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="About Me"
+                    android:layout_below="@+id/editme"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#504E4E"
+                    android:layout_marginLeft="14dp"
+                    >
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+            <group  android:checkableBehavior="single">
+            <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"
+            />
+    <item
+        android:id="@+id/nav_search"
+        android:title="Search by ID"
+        android:icon="@drawable/ic_search_nav"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/nav_shortlist"
+        android:title="Shortlisted"
+        android:icon="@drawable/ic_shortlisti"
+        android:visible="true"
+        />
+        <item
+            android:id="@+id/nav_matches"
+            android:title="Matches"
+            android:icon="@drawable/ic_039_matches"
+            android:visible="true"
+            />
+
+                <item
+                    android:id="@+id/nav_profilevisitor"
+                    android:title="Profile Visitor"
+                    android:icon="@drawable/ic_profileviews"
+                    android:visible="true"
+                    />
+
+                <item
+                    android:id="@+id/nav_likes"
+                    android:title="Likes"
+                    android:icon="@drawable/ic_likes"
+                    android:visible="false"
+                    />
+                <item
+                    android:id="@+id/nav_successsotry"
+                    android:title="Success Story"
+                    android:icon="@drawable/ic_successstory"
+                    android:visible="true"
+                    />
+                <item
+                    android:id="@+id/nav_faq"
+                    android:title="Help | Support"
+                    android:icon="@drawable/ic_faq"
+                     />
+            </group>
+
+
+            <item android:id="@+id/nav_buy_membership"
+                android:title="Buy Membership"
+                android:icon="@drawable/ic_membership"
+                    android:visible="true"
+                />
+
+
+    <item android:id="@+id/nav_renew_membership"
+        android:title="Renew Membership"
+        android:icon="@drawable/ic_membership"
+        android:visible="false"/>
+
+
+        <item android:id="@+id/nav_meet"
+            android:title="Meet &amp; Greet "
+            android:icon="@drawable/ic_meetngreet"
+            android:visible="true"
+            />
+
+    <item android:id="@+id/nav_feedback"
+        android:title="Feedback"
+        android:icon="@drawable/ic_checklist"
+       />
+
+    <item android:title="About Us"
+            android:id="@+id/nav_aboutUs"
+            android:icon="@drawable/user"/>
+
+</menu>

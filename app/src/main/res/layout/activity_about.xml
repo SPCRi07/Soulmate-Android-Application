@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:scrollbars="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="always"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/aboutname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="monospace"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutid"
+                android:layout_toRightOf="@+id/aboutname"
+                android:text="(ID)"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtaboutusername"
+                android:layout_below="@id/aboutid"
+                android:textColor="#292828"
+                android:text="Username"
+                android:textSize="17dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutyear"
+                android:layout_below="@id/aboutid"
+                android:layout_toRightOf="@+id/txtaboutusername"
+                android:textColor="#494747"
+                android:text="username"
+                android:textSize="17dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutyear"
+                android:text="Height"
+                android:textSize="17dp"
+                android:textColor="#292828"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutheight"
+                android:layout_below="@id/aboutyear"
+                android:layout_toRightOf="@+id/txtaboutusername"
+                android:text="height"
+                android:textSize="17dp"
+                android:textColor="#494747"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtemployedin2"
+                android:layout_below="@id/aboutheight"
+                android:textColor="#292828"
+                android:text="Employed In"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutemployedin2"
+                android:layout_below="@id/aboutheight"
+                android:layout_toRightOf="@+id/abouttxtemployedin2"
+                android:textColor="#494747"
+                android:text="Employed In"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtreligion2"
+                android:layout_below="@id/aboutemployedin2"
+                android:textColor="#292828"
+                android:text="Religion"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutreligion2"
+                android:layout_below="@id/aboutemployedin2"
+                android:layout_toRightOf="@+id/abouttxtreligion2"
+                android:textColor="#494747"
+                android:text="Religion"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtcaste"
+                android:layout_below="@id/aboutreligion2"
+                android:text="Caste"
+                android:textSize="17dp"
+                android:textColor="#292828"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutcaste"
+                android:layout_below="@id/aboutreligion2"
+                android:layout_toRightOf="@+id/abouttxtcaste"
+                android:text="Caste"
+                android:textSize="17dp"
+                android:textColor="#494747"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtincome"
+                android:layout_below="@id/aboutcaste"
+                android:textColor="#292828"
+                android:text="Income Per Year"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutincome"
+                android:layout_below="@id/aboutcaste"
+                android:layout_toRightOf="@+id/abouttxtincome"
+                android:textColor="#494747"
+                android:text="Income Per Year"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtmothertongue"
+                android:layout_below="@id/aboutincome"
+                android:textColor="#292828"
+                android:text="Mother Tongue"
+                android:textSize="17dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutmothertongue"
+                android:layout_below="@id/aboutincome"
+                android:layout_toRightOf="@+id/abouttxtmothertongue"
+                android:textColor="#494747"
+                android:text="Mother Tongue"
+                android:textSize="17dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxteducation"
+                android:layout_below="@id/aboutmothertongue"
+                android:text="Education"
+                android:textSize="17dp"
+                android:textColor="#292828"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouteducation"
+                android:layout_below="@id/aboutmothertongue"
+                android:layout_toRightOf="@+id/abouttxteducation"
+                android:text="Education"
+                android:textSize="17dp"
+                android:textColor="#494747"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtoccupation"
+                android:layout_below="@id/abouteducation"
+                android:textColor="#292828"
+                android:text="Occupation"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutoccupation"
+                android:layout_below="@id/abouteducation"
+                android:layout_toRightOf="@+id/abouttxtoccupation"
+                android:textColor="#494747"
+                android:text="Occupation"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtemarritialstatus"
+                android:layout_below="@id/aboutoccupation"
+                android:textColor="#292828"
+                android:text="Maritial Status"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutemarritialstatus"
+                android:layout_below="@id/aboutoccupation"
+                android:layout_toRightOf="@+id/abouttxtemarritialstatus"
+                android:textColor="#494747"
+                android:text="Marritial Status"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutdescofaboutme"
+                android:layout_below="@id/aboutemarritialstatus"
+                android:textAlignment="center"
+                android:textColor="#292828"
+                android:text="Describtion Of About Me Field"
+                android:textSize="20dp"
+                android:fontFamily="@font/adamina"
+                android:textStyle="bold"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutdescofaboutme"
+                android:paddingLeft="70dp"
+                android:drawableLeft="@drawable/career"
+                android:drawablePadding="2dp"
+                android:textSize="19dp"
+                android:paddingTop="6dp"
+
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcareer"
+                android:layout_below="@id/aboutdescofaboutme"
+                android:textAlignment="center"
+                android:text="Career Details"
+                android:fontFamily="monospace"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:drawablePadding="10sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcareereducation"
+                android:layout_below="@id/txtcareer"
+                android:textColor="#292828"
+                android:text="Education"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutcareereducation"
+                android:layout_below="@id/txtcareer"
+                android:layout_toRightOf="@+id/txtcareereducation"
+                android:textColor="#494747"
+                android:text="abc"
+                android:textSize="17dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcareeremploiedin"
+                android:layout_below="@id/aboutcareereducation"
+                android:textColor="#292828"
+                android:text="Employed In"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutcareeremploiedin"
+                android:layout_below="@id/aboutcareereducation"
+                android:layout_toRightOf="@+id/txtcareeremploiedin"
+                android:textColor="#494747"
+                android:text="abc"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcareeroccupation"
+                android:layout_below="@id/aboutcareeremploiedin"
+                android:textColor="#292828"
+                android:text="Occupation"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutcareeroccupation"
+                android:layout_below="@id/aboutcareeremploiedin"
+                android:layout_toRightOf="@+id/txtcareeroccupation"
+                android:textColor="#494747"
+                android:text="abc"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcareerincome"
+                android:layout_below="@id/aboutcareeroccupation"
+                android:textColor="#292828"
+                android:text="Yearly Income"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutcareerincome"
+                android:layout_below="@id/aboutcareeroccupation"
+                android:layout_toRightOf="@+id/txtcareerincome"
+                android:textColor="#494747"
+                android:text="abc"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtliving"
+                android:layout_below="@id/aboutcareerincome"
+                android:textAlignment="center"
+                android:text="Living Details"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/desthome"
+                 android:layout_marginTop="20dp"
+                android:layout_margin="10sp"
+                android:padding="10sp"
+                android:paddingLeft="-30dp"
+                />
+
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtstate"
+                android:layout_below="@id/txtliving"
+                android:text="State"
+                android:textSize="17dp"
+                android:textColor="#292828"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutstate"
+                android:layout_below="@id/txtliving"
+                android:layout_toRightOf="@+id/abouttxtstate"
+                android:text="State"
+                android:textSize="17dp"
+                android:textColor="#494747"
+                android:layout_marginTop="16sp"
+                android:paddingBottom="6dp"
+                android:gravity="bottom"
+                android:paddingTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttxtcity"
+                android:layout_below="@id/abouttxtstate"
+                android:textColor="#292828"
+                android:text="City"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/obtainedcity"
+                android:layout_below="@id/abouttxtstate"
+                android:layout_toRightOf="@+id/abouttxtcity"
+                android:textColor="#494747"
+                android:text="City"
+                android:textSize="17dp"
+                android:gravity="bottom"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+    <activity android:name=".cityfindrecycle">
+
+
+    </activity>
+        <activity android:name=".nav_Faq"/>
+        <activity
+            android:name=".choosecity"
+            android:parentActivityName=".city_find"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".securitypassword"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".writepassword" />
+        <activity
+            android:name=".ChangeApppassowrd"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".createpassword"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".deleteAccount"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".mystatistics" />
+        <activity
+            android:name=".AboutSoulMate"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".changeforgotpassword" />
+        <activity android:name=".editprofileabout" />
+        <activity
+            android:name=".Feedback"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".personaldetails" />
+        <activity
+            android:name=".changepassword"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".privacy"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".editprofile" />
+        <activity android:name=".appearance" />
+        <activity android:name=".UserProfileListAdapter" />
+        <activity android:name=".FamildDetails" />
+        <activity android:name=".About_me" />
+        <activity android:name=".activity_username" />
+        <activity android:name=".profilepicture2" />
+        <activity android:name=".about" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".welcome_activity" />
+        <activity
+            android:name=".city_find"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".forgotpass" />
+        <activity android:name=".signup" />
+        <activity
+            android:name=".login"
+            android:autoRemoveFromRecents="true"
+            android:noHistory="true" />
+        <activity android:name=".reg1" />
+        <activity android:name=".verify_otp" />
+        <activity android:name=".verify_number" />
+        <activity android:name=".reg_logindetails" />
+        <activity android:name=".careerdetails" />
+        <activity android:name=".partner_pref" />
+        <activity android:name=".socialdetails" />
+        <activity android:name=".vernumverified" />
+        <activity android:name=".verify_otp_forgotpass" />
+        <activity android:name=".profileview" />
+        <activity android:name=".BottomNavigationActivity" />
+        <activity android:name=".temp" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Feedbacklogout"
+            android:parentActivityName=".BottomNavigationActivity"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".logout" />
+        <activity android:name=".profileupload" />
+        <activity android:name=".updateprofileupload" />
+        <activity android:name=".updatesocialdetails" />
+        <activity android:name=".updatepersonaldetails" />
+        <activity android:name=".updateFamildDetails" />
+        <activity android:name=".updatecareerdetails" />
+        <activity android:name=".updatereg_logindetails" />
+        <activity android:name=".updateappearance" />
+        <activity android:name=".update_partner_pref" />
+        <activity android:name=".payment_gateway" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_5kqr0l4nc72RN7" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

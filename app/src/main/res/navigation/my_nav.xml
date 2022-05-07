@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/my_nav"
+    app:startDestination="@id/homeDashboardFragment">
+
+    <fragment
+        android:id="@+id/homeDashboardFragment"
+        android:name="com.example.myapplication.HomeDashboardFragment"
+        android:label="HomeDashboardFragment" />
+    <fragment
+        android:id="@+id/searchDashboardFragment"
+        android:name="com.example.myapplication.SearchDashboardFragment"
+        android:label="SearchDashboardFragment" />
+    <fragment
+        android:id="@+id/chatboxDashboardFragment"
+        android:name="com.example.myapplication.ChatboxDashboardFragment"
+        android:label="ChatboxDashboardFragment" />
+    <fragment
+        android:id="@+id/notificationDashboardFragment"
+        android:name="com.example.myapplication.NotificationDashboardFragment"
+        android:label="NotificationDashboardFragment" />
+    <fragment
+        android:id="@+id/settingsDashboardFragment"
+        android:name="com.example.myapplication.SettingsDashboardFragment"
+        android:label="SettingsDashboardFragment" />
+
+</navigation>

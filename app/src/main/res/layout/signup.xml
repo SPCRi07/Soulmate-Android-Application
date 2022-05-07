@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnedit"
+            android:layout_marginTop="50dp"
+            android:hint="First Name"
+            android:id="@+id/name"
+            android:padding="6dp"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:background="@drawable/btnedit"
+            android:hint="Last Name"
+            android:id="@+id/name2"
+            android:padding="6dp"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name2"
+            android:background="@drawable/btnedit"
+            android:layout_marginTop="10dp"
+            android:hint="Email Address"
+            android:id="@+id/name3"
+            android:padding="6dp"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name3"
+            android:background="@drawable/btnedit"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:id="@+id/name4"
+            android:padding="6dp"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            android:textColorHint="#AE8B202B"
+            />
+
+                    <Button
+                        android:id="@+id/btn_next2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btnbutton"
+                        android:text="Submit"
+                        android:textColor="#FAF7F8"
+                        android:textSize="25dp"
+                        android:layout_below="@id/name4"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="40dp"
+                        android:padding="20dp"
+                        android:fontFamily="sans-serif"
+                        />
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
+

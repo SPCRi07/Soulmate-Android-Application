@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reg_logindetails"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/colorPrimaryDark">
+
+       <TextView
+           android:id="@+id/draw"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="10dp"
+           android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+           android:textStyle="bold"
+           >
+       </TextView>
+
+
+       <TextView
+           android:layout_width="175dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/draw"
+           android:text="Login Details"
+           android:layout_marginTop="15dp"
+           android:textColor="#FFF"
+           android:layout_marginBottom="10dp"
+           android:textIsSelectable="false"
+           android:textSize="22dp"
+           android:textStyle="bold|italic" />
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fullname"
+    android:text="Full Name *"
+    android:textColor="#302E2E"
+    android:layout_marginTop="30dp"
+    android:textSize="17dp"
+    android:layout_marginLeft="15dp"
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edname"
+    android:layout_below="@id/fullname"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+
+    />
+
+        <TextView
+            android:id="@+id/emailid"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edname"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="21dp"
+            android:textSize="17dp"
+            android:text="Email ID *"
+            android:textColor="#302E2E" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edemail"
+            android:layout_below="@id/emailid"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edemail"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="21dp"
+            android:textSize="17dp"
+            android:text="Password *"
+            android:textColor="#302E2E" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edpassword"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@color/colorPrimaryDark"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edpassword"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="13dp"
+            android:text="Hint: Use 8 or more characters with a mix ofletters(a-z) and numbers(0-9)."
+            android:textColor="#302E2E"
+            />
+
+        <TextView
+            android:id="@+id/phoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:gravity="left"
+
+            android:text="Phone no *"
+            android:textColor="#302E2E"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/n91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneno"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:maxLength="3"
+            android:text="+91"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/n91"
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/phoneno"
+            android:inputType="number"
+            android:maxLength="10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextlogin"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="NEXT-YOU ARE ALMOST THERE"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

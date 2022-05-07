@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:id="@+id/packagescrollbar11">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/silver1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12dp"
+                android:background="#ACC1FF"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500sp"
+                    android:background="@drawable/shape"
+                    android:gravity="center">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:background="@drawable/subscription_cruve">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/silverpackage"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/silver1price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="230dp"
+                        android:layout_marginBottom="3sp"
+                        android:fontFamily="@font/adamina"
+                        android:text="Price for silver Package:- INR 100/-"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="@font/adamina"
+                        android:text="Package Validity:- INR 100(per month)"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textAlignment="center"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/adamina"
+                        android:text="Key Fetures For silver1 Package :-"
+                        android:layout_below="@id/silver1price"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:text="-   You can unlock upto 15 Photos."
+                        android:fontFamily="@font/almendra"
+                        android:layout_marginTop="340dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:text="-   You can unlock upto 15 Contact Numbers."
+                        android:fontFamily="@font/almendra"
+                        android:layout_marginTop="360dp"
+                        >
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/silver1select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/btnbutton3"
+                        android:fontFamily="@font/adamina"
+                        android:text="select silver1"
+                        android:textAlignment="center"
+                        android:textColor="#6f6f6f"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gold1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12dp"
+                android:background="#ACC1FF"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500sp"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold1photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:background="@drawable/goldpackage"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:layout_below="@id/gold1photo"
+                        android:text="Price for gold Package:- INR 200/-"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="3sp"
+                        android:id="@+id/gold1price"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="270dp"
+                        android:fontFamily="@font/adamina"
+                        android:text="Package Validity:- INR 100(per month)"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textAlignment="center"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/adamina"
+                        android:text="Key Fetures For gold Package :-"
+                        android:layout_marginTop="50dp"
+                        android:layout_below="@id/gold1price"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:text="-   You can unlock upto 30 Photos."
+                        android:fontFamily="@font/almendra"
+                        android:layout_marginTop="350dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:text="-   You can unlock upto 30 Contact Numbers."
+                        android:fontFamily="@font/almendra"
+                        android:layout_marginTop="370dp"
+                        >
+                    </TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:text="select gold"
+                        android:background="@drawable/btnbutton4"
+                        android:textAlignment="center"
+                        android:textColor="#6f6f6f"
+                        android:textSize="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/gold1select"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/diamond1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12dp"
+                android:background="#ACC1FF"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500sp"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/diamond1photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#6f6f6f"
+                        android:background="@drawable/diamondpackage"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:layout_below="@id/diamond1photo"
+                        android:text="Price for diamond1 Package:- INR 300/-"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="3sp"
+                        android:id="@+id/diamond1price"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="270dp"
+                        android:fontFamily="@font/adamina"
+                        android:text="Package Validity:- INR 300(per month)"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textAlignment="center"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/adamina"
+                        android:text="Key Fetures For diamond1 Package :-"
+                        android:layout_below="@id/diamond1price"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:text="-   You can unlock upto 45 Photos."
+                        android:fontFamily="@font/almendra"
+                        android:layout_marginTop="350dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:text="-   You can unlock upto 45 Contact Numbers."
+                        android:fontFamily="@font/almendra"
+                        android:layout_marginTop="370dp"
+                        >
+                    </TextView>
+
+
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:text="select diamond1"
+                        android:textAlignment="center"
+                        android:textColor="#474545"
+                        android:textSize="20dp"
+                        android:background="@drawable/btnbutton5"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/diamond1select"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/monthscard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="#ACC1FF"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500sp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="3 Months"
+                android:textAlignment="center"
+                android:textColor="#6f6f6f"
+                android:textSize="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="30sp"
+                android:layout_margin="10sp"
+                android:id="@+id/select3price"
+                android:background="@drawable/shape2"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="6 months"
+                android:layout_margin="10sp"
+                android:textAlignment="center"
+                android:textColor="#6f6f6f"
+                android:textSize="25dp"
+                android:background="@drawable/shape2"
+                android:layout_below="@id/select3price"
+                android:id="@+id/select6price"
+                android:layout_marginBottom="40sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="12 months"
+                android:layout_margin="10sp"
+                android:textAlignment="center"
+                android:textColor="#6f6f6f"
+                android:textSize="25dp"
+                android:background="@drawable/shape2"
+                android:layout_below="@id/select6price"
+                android:id="@+id/select12months"
+                android:layout_marginBottom="40sp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/paymentrelative"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:text="About Plan"
+            android:layout_marginTop="30sp"
+            android:textAlignment="center"
+            android:textColor="#6f6f6f"
+            android:textSize="30dp"
+            android:id="@+id/Aboutplan"
+            android:layout_marginBottom="40sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:text="Your total price is "
+            android:layout_margin="10sp"
+            android:textAlignment="center"
+            android:textColor="#6f6f6f"
+            android:textSize="15dp"
+            android:layout_above="@id/Abouttotalprice"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:hint="price here"
+            android:layout_margin="10sp"
+            android:textAlignment="center"
+            android:textColor="#6f6f6f"
+            android:textSize="25dp"
+            android:background="@drawable/shape2"
+            android:id="@+id/Abouttotalprice"
+            android:layout_below="@id/Aboutplan"
+            android:layout_marginBottom="40sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:text="Your Selected Package  is "
+            android:layout_margin="10sp"
+            android:textAlignment="center"
+            android:textColor="#6f6f6f"
+            android:textSize="15dp"
+            android:layout_below="@id/Abouttotalprice"
+            android:id="@+id/asdwq"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:hint="Package Name here"
+            android:layout_margin="10sp"
+            android:textAlignment="center"
+            android:textColor="#6f6f6f"
+            android:textSize="25dp"
+            android:background="@drawable/shape2"
+            android:id="@+id/Aboutselectedpackage"
+            android:layout_below="@id/asdwq"
+            android:layout_marginTop="30sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buy"
+            android:textSize="20dp"
+            android:text="Pay Now"
+            android:textColor="#FFFF"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

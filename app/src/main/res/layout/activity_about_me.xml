@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_me"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="About Me"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFF"
+        android:textIsSelectable="false"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtaboutmedesc"
+            android:text="Tell us some more abotu yourself and what kind of person you are."
+            android:textSize="18dp"
+            android:textColor="#302E2E"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtaboutmedesc"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColorHint="#838080"
+            android:hint="You have to write minimum 25 words"
+            android:layout_centerHorizontal="true"
+            >
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edaboutmedesc"
+            android:layout_below="@id/counter"
+            android:ems="10"
+            android:textColor="#302E2E"
+            android:textColorHint="#838080"
+            android:hint="Write minimum of 25 words.you can change this text layter on as well."
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            >
+        </EditText>
+
+
+
+        <Button
+            android:id="@+id/btncomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:text="Complete My Profile"
+            android:textColor="#FFFF">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

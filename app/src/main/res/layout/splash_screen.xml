@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/splashlovevivah">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOUL"
+            android:textColor="#FF5722"
+            android:textSize="45dp"
+            android:layout_marginTop="350dp"
+            android:fontFamily="cursive"
+            android:id="@+id/textsoulmate"
+            android:layout_marginLeft="120dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="MATE"
+            android:textAlignment="center"
+            android:textColor="#FF9800"
+            android:textSize="45dp"
+            android:layout_marginTop="280dp"
+            android:fontFamily="cursive"
+            android:id="@+id/textsoulmate2"
+            android:layout_toEndOf="@id/textsoulmate"
+            android:drawableTop="@drawable/ic_love"
+            android:drawableTintMode="src_atop"
+            android:drawableTint="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:text="Designed and Developed by"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginTop="670dp"
+            android:gravity="center"
+            android:layout_marginLeft="90dp"
+            android:fontFamily="sans-serif-light"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:text="Ayush Patel | Parth Solanki"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_below="@id/text"
+            android:gravity="center"
+            android:layout_marginLeft="130dp"
+            android:fontFamily="sans-serif-light"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

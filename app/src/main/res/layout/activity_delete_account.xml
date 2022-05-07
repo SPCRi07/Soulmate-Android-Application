@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deleteAccount">
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="200sp"
+        android:src="@drawable/logo5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:id="@+id/abc123"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Reason to Deleting your Account"
+        android:textColor="#000"
+        android:layout_below="@id/abc123"
+        android:textSize="20sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/adamina"
+        android:id="@+id/deleteaccounttext"
+        android:layout_marginTop="30sp"
+/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deleteaccounttext"
+        android:id="@+id/deleteaccountspinner"
+        android:layout_marginTop="20sp"
+        android:spinnerMode="dropdown"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/deleteaccountbtn"
+        android:background="@drawable/shape"
+        android:text="Delete Account"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/adamina"
+        />
+
+
+        </RelativeLayout>
